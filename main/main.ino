@@ -38,3 +38,8 @@ void loop(){
   }
   delay(500);
 }
+if(analogRead(A0)<600){
+ analogWrite(relay,HIGH);
+ delay(1000);
+ analogWrite(relay,LOW);
+ delay(1000);}
