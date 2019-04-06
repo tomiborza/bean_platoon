@@ -18,12 +18,10 @@ void loop(){
   if(s_val==LOW ){      //switching the system on/off
   analogWrite(piros,LOW);
   analogWrite(zold,20);
-  Serial.println("zod");
   
   }else {
   analogWrite(zold,LOW);                  
   analogWrite(piros,10);
-  Serial.println("piros");
   Serial.println(s_val);
   
   }
