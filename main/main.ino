@@ -8,7 +8,6 @@ void setup(){
   pinMode(zold, OUTPUT);
   pinMode(piros,OUTPUT);
   pinMode(s_onoff,INPUT_PULLUP);
-  pinMode(out, OUTPUT);
 }
 
 void loop(){
