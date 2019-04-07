@@ -28,7 +28,7 @@ void loop(){
     
     analogWrite(piros,LOW);
     analogWrite(zold,20);
-    Serial.println(s_val);
+    Serial.println("system: ON");
     if(analogRead(A0)<600){
       digitalWrite(relay_pump,HIGH);
       Serial.println("waterpump state: on");
@@ -55,7 +55,7 @@ void loop(){
   }else{
     analogWrite(zold,LOW);                  
     analogWrite(piros,10);
-    Serial.println(s_val);
+    Serial.println("system: OFF");
     digitalWrite(relay_fan,LOW);
     digitalWrite(relay_pump,LOW);
   }
